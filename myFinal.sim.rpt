@@ -1,0 +1,323 @@
+Simulator report for myFinal
+Thu May 17 13:26:44 2018
+Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 320.0 us     ;
+; Simulation Netlist Size     ; 110 nodes    ;
+; Simulation Coverage         ;      37.96 % ;
+; Total Number of Transitions ; 293          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; Off        ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      37.96 % ;
+; Total nodes checked                                 ; 110          ;
+; Total output ports checked                          ; 108          ;
+; Total output ports with complete 1/0-value coverage ; 41           ;
+; Total output ports with no 1/0-value coverage       ; 51           ;
+; Total output ports with no 1-value coverage         ; 62           ;
+; Total output ports with no 0-value coverage         ; 56           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |myFinal|process_0~1  ; |myFinal|process_0~1  ; out0             ;
+; |myFinal|process_0~2  ; |myFinal|process_0~2  ; out0             ;
+; |myFinal|process_0~3  ; |myFinal|process_0~3  ; out0             ;
+; |myFinal|process_0~4  ; |myFinal|process_0~4  ; out0             ;
+; |myFinal|y~0          ; |myFinal|y~0          ; out              ;
+; |myFinal|y~1          ; |myFinal|y~1          ; out              ;
+; |myFinal|process_0~5  ; |myFinal|process_0~5  ; out0             ;
+; |myFinal|process_0~6  ; |myFinal|process_0~6  ; out0             ;
+; |myFinal|process_0~7  ; |myFinal|process_0~7  ; out0             ;
+; |myFinal|y~2          ; |myFinal|y~2          ; out              ;
+; |myFinal|y~3          ; |myFinal|y~3          ; out              ;
+; |myFinal|y~4          ; |myFinal|y~4          ; out              ;
+; |myFinal|y~5          ; |myFinal|y~5          ; out              ;
+; |myFinal|y~6          ; |myFinal|y~6          ; out              ;
+; |myFinal|y~7          ; |myFinal|y~7          ; out              ;
+; |myFinal|y~8          ; |myFinal|y~8          ; out              ;
+; |myFinal|y~9          ; |myFinal|y~9          ; out              ;
+; |myFinal|y.B          ; |myFinal|y.B          ; regout           ;
+; |myFinal|y.C          ; |myFinal|y.C          ; regout           ;
+; |myFinal|clock        ; |myFinal|clock        ; out              ;
+; |myFinal|but1         ; |myFinal|but1         ; out              ;
+; |myFinal|but2         ; |myFinal|but2         ; out              ;
+; |myFinal|but3         ; |myFinal|but3         ; out              ;
+; |myFinal|y~10         ; |myFinal|y~10         ; out0             ;
+; |myFinal|Selector0~1  ; |myFinal|Selector0~1  ; out0             ;
+; |myFinal|Selector0~2  ; |myFinal|Selector0~2  ; out0             ;
+; |myFinal|y~15         ; |myFinal|y~15         ; out0             ;
+; |myFinal|Selector0~7  ; |myFinal|Selector0~7  ; out0             ;
+; |myFinal|Selector0~11 ; |myFinal|Selector0~11 ; out0             ;
+; |myFinal|Selector0~12 ; |myFinal|Selector0~12 ; out0             ;
+; |myFinal|Selector0~13 ; |myFinal|Selector0~13 ; out0             ;
+; |myFinal|Selector1~0  ; |myFinal|Selector1~0  ; out0             ;
+; |myFinal|Selector1~2  ; |myFinal|Selector1~2  ; out0             ;
+; |myFinal|Selector1~3  ; |myFinal|Selector1~3  ; out0             ;
+; |myFinal|Selector1~4  ; |myFinal|Selector1~4  ; out0             ;
+; |myFinal|Selector2~0  ; |myFinal|Selector2~0  ; out0             ;
+; |myFinal|Selector2~1  ; |myFinal|Selector2~1  ; out0             ;
+; |myFinal|Selector2~2  ; |myFinal|Selector2~2  ; out0             ;
+; |myFinal|Selector3~0  ; |myFinal|Selector3~0  ; out0             ;
+; |myFinal|Selector3~1  ; |myFinal|Selector3~1  ; out0             ;
+; |myFinal|Selector3~2  ; |myFinal|Selector3~2  ; out0             ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------+
+; Missing 1-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |myFinal|process_0~0  ; |myFinal|process_0~0  ; out0             ;
+; |myFinal|y.A          ; |myFinal|y.A          ; regout           ;
+; |myFinal|y.E          ; |myFinal|y.E          ; regout           ;
+; |myFinal|y.F          ; |myFinal|y.F          ; regout           ;
+; |myFinal|process_1~0  ; |myFinal|process_1~0  ; out0             ;
+; |myFinal|process_1~1  ; |myFinal|process_1~1  ; out0             ;
+; |myFinal|process_1~2  ; |myFinal|process_1~2  ; out0             ;
+; |myFinal|process_1~3  ; |myFinal|process_1~3  ; out0             ;
+; |myFinal|process_1~4  ; |myFinal|process_1~4  ; out0             ;
+; |myFinal|process_1~5  ; |myFinal|process_1~5  ; out0             ;
+; |myFinal|y.G          ; |myFinal|y.G          ; regout           ;
+; |myFinal|senseP       ; |myFinal|senseP       ; out              ;
+; |myFinal|z2           ; |myFinal|z2           ; pin_out          ;
+; |myFinal|LedG         ; |myFinal|LedG         ; pin_out          ;
+; |myFinal|LedR         ; |myFinal|LedR         ; pin_out          ;
+; |myFinal|segm1[0]     ; |myFinal|segm1[0]     ; pin_out          ;
+; |myFinal|segm1[1]     ; |myFinal|segm1[1]     ; pin_out          ;
+; |myFinal|segm1[2]     ; |myFinal|segm1[2]     ; pin_out          ;
+; |myFinal|segm1[3]     ; |myFinal|segm1[3]     ; pin_out          ;
+; |myFinal|segm1[4]     ; |myFinal|segm1[4]     ; pin_out          ;
+; |myFinal|segm1[5]     ; |myFinal|segm1[5]     ; pin_out          ;
+; |myFinal|segm1[6]     ; |myFinal|segm1[6]     ; pin_out          ;
+; |myFinal|segm2[0]     ; |myFinal|segm2[0]     ; pin_out          ;
+; |myFinal|segm2[1]     ; |myFinal|segm2[1]     ; pin_out          ;
+; |myFinal|segm2[2]     ; |myFinal|segm2[2]     ; pin_out          ;
+; |myFinal|segm2[3]     ; |myFinal|segm2[3]     ; pin_out          ;
+; |myFinal|segm2[4]     ; |myFinal|segm2[4]     ; pin_out          ;
+; |myFinal|segm2[5]     ; |myFinal|segm2[5]     ; pin_out          ;
+; |myFinal|segm2[6]     ; |myFinal|segm2[6]     ; pin_out          ;
+; |myFinal|segm3[0]     ; |myFinal|segm3[0]     ; pin_out          ;
+; |myFinal|segm3[1]     ; |myFinal|segm3[1]     ; pin_out          ;
+; |myFinal|segm3[2]     ; |myFinal|segm3[2]     ; pin_out          ;
+; |myFinal|segm3[3]     ; |myFinal|segm3[3]     ; pin_out          ;
+; |myFinal|segm3[4]     ; |myFinal|segm3[4]     ; pin_out          ;
+; |myFinal|segm3[5]     ; |myFinal|segm3[5]     ; pin_out          ;
+; |myFinal|segm3[6]     ; |myFinal|segm3[6]     ; pin_out          ;
+; |myFinal|segm4[0]     ; |myFinal|segm4[0]     ; pin_out          ;
+; |myFinal|segm4[1]     ; |myFinal|segm4[1]     ; pin_out          ;
+; |myFinal|segm4[2]     ; |myFinal|segm4[2]     ; pin_out          ;
+; |myFinal|segm4[3]     ; |myFinal|segm4[3]     ; pin_out          ;
+; |myFinal|segm4[4]     ; |myFinal|segm4[4]     ; pin_out          ;
+; |myFinal|segm4[5]     ; |myFinal|segm4[5]     ; pin_out          ;
+; |myFinal|segm4[6]     ; |myFinal|segm4[6]     ; pin_out          ;
+; |myFinal|y~11         ; |myFinal|y~11         ; out0             ;
+; |myFinal|Selector0~0  ; |myFinal|Selector0~0  ; out0             ;
+; |myFinal|Selector0~4  ; |myFinal|Selector0~4  ; out0             ;
+; |myFinal|Selector0~5  ; |myFinal|Selector0~5  ; out0             ;
+; |myFinal|Selector0~6  ; |myFinal|Selector0~6  ; out0             ;
+; |myFinal|Selector0~8  ; |myFinal|Selector0~8  ; out0             ;
+; |myFinal|Selector0~9  ; |myFinal|Selector0~9  ; out0             ;
+; |myFinal|Selector0~10 ; |myFinal|Selector0~10 ; out0             ;
+; |myFinal|Selector0~14 ; |myFinal|Selector0~14 ; out0             ;
+; |myFinal|Selector1~1  ; |myFinal|Selector1~1  ; out0             ;
+; |myFinal|Selector4~0  ; |myFinal|Selector4~0  ; out0             ;
+; |myFinal|Selector4~1  ; |myFinal|Selector4~1  ; out0             ;
+; |myFinal|Selector4~2  ; |myFinal|Selector4~2  ; out0             ;
+; |myFinal|Selector5~0  ; |myFinal|Selector5~0  ; out0             ;
+; |myFinal|Selector5~1  ; |myFinal|Selector5~1  ; out0             ;
+; |myFinal|Selector5~2  ; |myFinal|Selector5~2  ; out0             ;
+; |myFinal|Selector6~0  ; |myFinal|Selector6~0  ; out0             ;
+; |myFinal|Selector6~1  ; |myFinal|Selector6~1  ; out0             ;
+; |myFinal|Selector6~2  ; |myFinal|Selector6~2  ; out0             ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------+
+; Missing 0-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |myFinal|y.D          ; |myFinal|y.D          ; regout           ;
+; |myFinal|y.E          ; |myFinal|y.E          ; regout           ;
+; |myFinal|y.F          ; |myFinal|y.F          ; regout           ;
+; |myFinal|process_1~2  ; |myFinal|process_1~2  ; out0             ;
+; |myFinal|process_1~3  ; |myFinal|process_1~3  ; out0             ;
+; |myFinal|process_1~4  ; |myFinal|process_1~4  ; out0             ;
+; |myFinal|process_1~5  ; |myFinal|process_1~5  ; out0             ;
+; |myFinal|y.G          ; |myFinal|y.G          ; regout           ;
+; |myFinal|Resetn       ; |myFinal|Resetn       ; out              ;
+; |myFinal|senseP       ; |myFinal|senseP       ; out              ;
+; |myFinal|z1           ; |myFinal|z1           ; pin_out          ;
+; |myFinal|z2           ; |myFinal|z2           ; pin_out          ;
+; |myFinal|LedG         ; |myFinal|LedG         ; pin_out          ;
+; |myFinal|LedR         ; |myFinal|LedR         ; pin_out          ;
+; |myFinal|LedY         ; |myFinal|LedY         ; pin_out          ;
+; |myFinal|segm1[1]     ; |myFinal|segm1[1]     ; pin_out          ;
+; |myFinal|segm1[2]     ; |myFinal|segm1[2]     ; pin_out          ;
+; |myFinal|segm1[6]     ; |myFinal|segm1[6]     ; pin_out          ;
+; |myFinal|segm2[0]     ; |myFinal|segm2[0]     ; pin_out          ;
+; |myFinal|segm2[1]     ; |myFinal|segm2[1]     ; pin_out          ;
+; |myFinal|segm2[2]     ; |myFinal|segm2[2]     ; pin_out          ;
+; |myFinal|segm2[3]     ; |myFinal|segm2[3]     ; pin_out          ;
+; |myFinal|segm2[4]     ; |myFinal|segm2[4]     ; pin_out          ;
+; |myFinal|segm2[5]     ; |myFinal|segm2[5]     ; pin_out          ;
+; |myFinal|segm2[6]     ; |myFinal|segm2[6]     ; pin_out          ;
+; |myFinal|segm3[0]     ; |myFinal|segm3[0]     ; pin_out          ;
+; |myFinal|segm3[1]     ; |myFinal|segm3[1]     ; pin_out          ;
+; |myFinal|segm3[2]     ; |myFinal|segm3[2]     ; pin_out          ;
+; |myFinal|segm3[3]     ; |myFinal|segm3[3]     ; pin_out          ;
+; |myFinal|segm3[4]     ; |myFinal|segm3[4]     ; pin_out          ;
+; |myFinal|segm3[5]     ; |myFinal|segm3[5]     ; pin_out          ;
+; |myFinal|segm3[6]     ; |myFinal|segm3[6]     ; pin_out          ;
+; |myFinal|segm4[0]     ; |myFinal|segm4[0]     ; pin_out          ;
+; |myFinal|segm4[1]     ; |myFinal|segm4[1]     ; pin_out          ;
+; |myFinal|segm4[2]     ; |myFinal|segm4[2]     ; pin_out          ;
+; |myFinal|segm4[3]     ; |myFinal|segm4[3]     ; pin_out          ;
+; |myFinal|segm4[4]     ; |myFinal|segm4[4]     ; pin_out          ;
+; |myFinal|segm4[5]     ; |myFinal|segm4[5]     ; pin_out          ;
+; |myFinal|segm4[6]     ; |myFinal|segm4[6]     ; pin_out          ;
+; |myFinal|Selector0~3  ; |myFinal|Selector0~3  ; out0             ;
+; |myFinal|Selector0~4  ; |myFinal|Selector0~4  ; out0             ;
+; |myFinal|Selector0~5  ; |myFinal|Selector0~5  ; out0             ;
+; |myFinal|Selector0~6  ; |myFinal|Selector0~6  ; out0             ;
+; |myFinal|Selector0~8  ; |myFinal|Selector0~8  ; out0             ;
+; |myFinal|Selector0~9  ; |myFinal|Selector0~9  ; out0             ;
+; |myFinal|Selector0~10 ; |myFinal|Selector0~10 ; out0             ;
+; |myFinal|Selector1~1  ; |myFinal|Selector1~1  ; out0             ;
+; |myFinal|Selector4~0  ; |myFinal|Selector4~0  ; out0             ;
+; |myFinal|Selector4~1  ; |myFinal|Selector4~1  ; out0             ;
+; |myFinal|Selector4~2  ; |myFinal|Selector4~2  ; out0             ;
+; |myFinal|Selector5~0  ; |myFinal|Selector5~0  ; out0             ;
+; |myFinal|Selector5~1  ; |myFinal|Selector5~1  ; out0             ;
+; |myFinal|Selector5~2  ; |myFinal|Selector5~2  ; out0             ;
+; |myFinal|Selector6~0  ; |myFinal|Selector6~0  ; out0             ;
+; |myFinal|Selector6~1  ; |myFinal|Selector6~1  ; out0             ;
+; |myFinal|Selector6~2  ; |myFinal|Selector6~2  ; out0             ;
++-----------------------+-----------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu May 17 13:26:43 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off myFinal -c myFinal
+Info: Using vector source file "C:/altera/91sp1/quartus/My_Codes/chckk_F/myFinal.vwf"
+Warning: Wrong node type and/or width for node "|myFinal|y" in vector source file. Node in design is of type Enum and of width 1, but node in vector source file is of type 9-Level and of width 1.
+Warning: Signal name "|myFinal|y" changed to enum type
+Warning: Can't find signal in vector source file for input pin "|myFinal|w"
+Warning: Can't find signal in vector source file for input pin "|myFinal|butT"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      37.96 %
+Info: Number of transitions in simulation is 293
+Info: Quartus II Simulator was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 154 megabytes
+    Info: Processing ended: Thu May 17 13:26:44 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
